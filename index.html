@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japanese Zone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <h2>日本語 <span>ZONE</span></h2>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#alphabet">Alphabet</a>
+      <a href="#vocabulary">Vocabulary</a>
+      <a href="#grammar">Grammar</a>
+      <a href="#quiz">Quiz</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="tag">WELCOME TO JAPANESE ZONE</p>
+    <h1>Learn Japanese<br>From Zero!</h1>
+    <p>
+      Mulai perjalanan belajar bahasa Jepang
+      dengan mudah, menyenangkan, dan gratis.
+    </p>
+    <a href="#alphabet" class="btn">Mulai Belajar →</a>
+  </div>
+  <div class="japanese-art">
+    <span>日本</span>
+    <p>こんにちは!</p>
+  </div>
+</section>
+
+<section id="alphabet" class="section">
+  <p class="tag">JAPANESE ALPHABET</p>
+  <h2>Kenali Huruf Jepang</h2>
+  <p class="subtitle">Pelajari tiga jenis huruf dalam bahasa Jepang.</p>
+
+  <div class="cards">
+    <div class="card">
+      <h3>あ Hiragana</h3>
+      <p>あ い う え お</p>
+      <small>Digunakan untuk kata asli Jepang.</small>
+    </div>
+    <div class="card">
+      <h3>ア Katakana</h3>
+      <p>ア イ ウ エ オ</p>
+      <small>Digunakan untuk kata serapan.</small>
+    </div>
+    <div class="card">
+      <h3>漢字 Kanji</h3>
+      <p>日 月 山 水</p>
+      <small>Huruf yang memiliki makna.</small>
+    </div>
+  </div>
+</section>
+
+<section id="vocabulary" class="section soft">
+  <p class="tag">DAILY VOCABULARY</p>
+  <h2>Kosakata Sehari-hari</h2>
+  <p class="subtitle">Cari kosakata bahasa Jepang yang ingin kamu pelajari.</p>
+
+  <input
+    type="text"
+    id="search"
+    placeholder="Cari kosakata..."
+  >
+
+  <div class="word-list" id="wordList">
+    <div class="word">
+      <b>こんにちは</b>
+      <span>Konnichiwa</span>
+      <small>Halo</small>
+    </div>
+    <div class="word">
+      <b>ありがとう</b>
+      <span>Arigatou</span>
+      <small>Terima kasih</small>
+    </div>
+    <div class="word">
+      <b>おはよう</b>
+      <span>Ohayou</span>
+      <small>Selamat pagi</small>
+    </div>
+    <div class="word">
+      <b>さようなら</b>
+      <span>Sayounara</span>
+      <small>Selamat tinggal</small>
+    </div>
+    <div class="word">
+      <b>すみません</b>
+      <span>Sumimasen</span>
+      <small>Permisi / Maaf</small>
+    </div>
+    <div class="word">
+      <b>はい</b>
+      <span>Hai</span>
+      <small>Ya</small>
+    </div>
+  </div>
+</section>
+
+<section id="grammar" class="section">
+  <p class="tag">BASIC GRAMMAR</p>
+  <h2>Belajar Tata Bahasa</h2>
+
+  <div class="grammar-box">
+    <h3>1. Pola Kalimat Dasar</h3>
+    <p><b>Watashi wa gakusei desu.</b></p>
+    <p>私は学生です。</p>
+    <p>Artinya: Saya adalah seorang pelajar.</p>
+  </div>
+
+  <div class="grammar-box">
+    <h3>2. Partikel は (wa)</h3>
+    <p>Digunakan untuk menandai topik pembicaraan.</p>
+    <p><b>Watashi wa Hanna desu.</b></p>
+    <p>Artinya: Saya Hanna.</p>
+  </div>
+
+  <div class="grammar-box">
+    <h3>3. Partikel の (no)</h3>
+    <p>Menunjukkan kepemilikan atau hubungan.</p>
+    <p><b>Watashi no hon.</b></p>
+    <p>Artinya: Buku saya.</p>
+  </div>
+</section>
+
+<section id="conversation" class="section soft">
+  <p class="tag">DAILY CONVERSATION</p>
+  <h2>Percakapan Sederhana</h2>
+
+  <div class="conversation">
+    <p><b>A:</b> こんにちは！</p>
+    <small>Konnichiwa! — Halo!</small>
+
+    <p><b>B:</b> こんにちは！元気ですか？</p>
+    <small>Konnichiwa! Genki desu ka? — Halo! Apa kabar?</small>
+
+    <p><b>A:</b> はい、元気です。</p>
+    <small>Hai, genki desu. — Ya, saya baik.</small>
+
+    <p><b>B:</b> よかったです！</p>
+    <small>Yokatta desu! — Syukurlah!</small>
+  </div>
+</section>
+
+<section id="quiz" class="section">
+  <p class="tag">TEST YOUR KNOWLEDGE</p>
+  <h2>Japanese Quiz</h2>
+  <p class="subtitle">Uji pemahaman bahasa Jepangmu!</p>
+
+  <div class="quiz-box">
+    <h3 id="question">Apa arti dari ありがとう?</h3>
+    <div id="answers"></div>
+    <p id="feedback"></p>
+    <p id="progress">Soal 1 dari 5</p>
+    <button id="nextBtn" class="btn" hidden>
+      Soal Berikutnya
+    </button>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2>日本語を学ぼう!</h2>
+  <p>
+    Japanese Zone adalah website pembelajaran
+    bahasa Jepang untuk pemula.
+    Belajar sedikit demi sedikit setiap hari!
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 Japanese Zone | Learn Something New Every Day.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
